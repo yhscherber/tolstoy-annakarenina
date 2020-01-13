@@ -16,6 +16,8 @@
 import nltk
 from nltk.tokenize import TweetTokenizer
 
+import re
+
 tokenizer = TweetTokenizer()
 
 # lexical richness
@@ -26,5 +28,15 @@ def lexicalRichnessFunction(file):
     lexMath = len(set(text)) / len(text)
     print('Lexical Richness: ' + str(lexMath))
 
+eachCharacterList = []
+allCharactersList = []
+openCharacterList = open("/Users/yanisa/GoogleDrive/Personal_Projects/Tolstoy/AnnaKarenina_TextAnalysis/characterlist.txt")
+characterList = openCharacterList.read()
+def characterCountFunction(text):
+    cleanText = re.sub('\[.*\]', '', text)
+    print(cleanText)
+
 annaKareninaText = "/Users/yanisa/GoogleDrive/Personal_Projects/Tolstoy/AnnaKarenina_TextAnalysis/AnnaKarenina.txt"
-lexicalRichnessFunction(annaKareninaText)
+# lexicalRichnessFunction(annaKareninaText)
+
+characterCountFunction(characterList)
