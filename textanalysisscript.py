@@ -6,6 +6,9 @@
 #       replace new lines w/ spaces or figure out how to do regex .. ?
 #       Vronsky + Karenin same name - maybe just search for either last name or first + middle? (not only first)
 #       Don't double count (e.g. *Alexey Alexandrovitch* Karenin should only be one, not two occurrences "AA" + "Karenin" = 2)
+#       Put each character into a list, and put those lists into another list, then make sure to delete each character name from text as you go along to not double count
+#       Put ' ' or '.' after to make sure not in the mid of word e.g. Lvova vs Lvov
+#       How many times does "Alexey" come up w/o the mid name after it? (differentiate between karenin and vronsky)
 # most common words?
 
 # Anna Karenina text downloaded from Project Gutenberg

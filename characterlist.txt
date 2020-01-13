@@ -1,28 +1,30 @@
 [Character list - Constance Garrett translation of Anna Karenina]
+[main and main-ish characters included in the list]
 
 [ignore text in brackets]
-[text w/ ** around it must be searched as one]
 
-Stepan Arkadyevitch Oblonsky Stiva
-Darya Alexandrovna Oblonskaya Dolly
-Matvey [Oblonsky's valet]
-Anna Arkadyevna Karenina
-*Alexey Alexandrovitch* Karenin
-Matrona Philimonovna [Oblonsky servant]
-Tanya [Oblonsky's daughter]
-Grisha [Oblonsky's son]
-Philip Ivanitch Nikitin [Oblonsky's colleague]
-Mihail Stanislavitch Grinevitch [Oblonsky's colleague]
-Konstantin Dmitrievitch Levin Kostya
-Sergey Ivanovitch Koznishev [Levin's half brother]
-*Prince Shtcherbatsky* *Alexander Shtcherbatsky*
-*Princess Shtcherbatskaya*
-*Princess Kitty Shtcherbatskaya* Kitty
-*Nikolay Shtcherbatsky* *young Shtcherbatsky* [the young Shtcherbatsky - Kitty's brother]
-*Princess Natalia Alexandrovna* Natalia Alexandrovna Lvova *Madame Lvova* [Kitty's older sister]
-Arseny Lvov [Natalia's husband]
-Nikolay Dmitrievitch Levin [main Levin's brother]
-Prokofy [servant for Levin + Sergey?]
-Mademoiselle Linon [Shtcherbatsky French governess/teacher]
-*Alexey Kirillovitch* Vronsky
-*Countess Nordston* [Kitty's friend]
+Stepan Arkadyevitch Oblonsky,Stiva,Stepan Arkadyevitch,Oblonsky,Stepan
+Darya Alexandrovna Oblonskaya,Dolly,Darya Alexandrovna
+Anna Arkadyevna Karenina,Anna,Anna Arkadyevna,Anna Karenina
+Alexey Alexandrovitch Karenin,Karenin,Alexey Alexandrovitch
+Seryozha,Sergey Alexeitch     [Anna's son]
+Annie   [Anna and Vronsky's daughter]
+Nikolay Dmitrievitch Levin,Nikolay Dmitrievitch   [main Levin's brother]
+Konstantin Dmitrievitch Levin,Kostya,Konstantin Dmitrievitch,Levin
+Sergey Ivanovitch Koznishev,Sergey Ivanovitch    [Levin's half brother]
+Prince Shtcherbatsky,Alexander Shtcherbatsky
+Princess Shtcherbatskaya
+Ekaterina,Princess Kitty Shtcherbatskaya,Kitty,Katya,Kitty Shtcherbatskaya
+Nikolay Shtcherbatsky,young Shtcherbatsky   [the young Shtcherbatsky - Kitty's brother]
+Princess Natalia Alexandrovna,Natalia Alexandrovna Lvova,Madame Lvova,Natalia Alexandrovna [Kitty's older sister]
+Arseny Lvov,Lvov    [Natalia's husband]
+Alexey Kirillovitch,Vronsky
+Countess Nordston,Nordston      [Kitty's friend]
+Countess Vronskaya,Vronskaya       [Vronsky's mom]
+Captain Yashvin,Prince Yashvin,Yashvin      [Vronsky's friend]
+Princess Betsy Tverskaya,Princess Betsy,Betsy       [Anna's friend/Vronsky's cousin]
+Countess Lidia Ivanovna,Countess Lidia,Lidia Ivanova,Lidia  [Karenin's friend]
+Agafea Mihalovna    [Levin's housekeeper/nurse]
+Mademoiselle Varenka,Varvara Andreevna,Varenka [Kitty's friend]
+Vassenka Veslovsky,Vassenka     [cousin of Shtcherbatskys]
+
