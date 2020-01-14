@@ -1,5 +1,5 @@
 # what characters are named the most? (create list of all character names)
-#      must consider common names like Levin or Oblonsky (can be more than one person)
+#      must consider common names like Levin (can be more than one person)
 #      make consideration for collocates..?
 #      also consider can have 's or s at the end (& do .islower)
 #       Prince or Princess not considered - refer to diff characters at diff times
@@ -10,6 +10,7 @@
 #       Put ' ' or '.' after to make sure not in the mid of word e.g. Lvova vs Lvov
 #       How many times does "Alexey" come up w/o the mid name after it? (differentiate between karenin and vronsky)
 # most common words?
+# how similar between two texts?
 
 # Anna Karenina text downloaded from Project Gutenberg
 
@@ -20,6 +21,8 @@ import re
 
 tokenizer = TweetTokenizer()
 
+annaKareninaText = "/Users/yanisa/GoogleDrive/Personal_Projects/Tolstoy/AnnaKarenina_TextAnalysis/AnnaKarenina.txt"
+
 # lexical richness
 def lexicalRichnessFunction(file):
     openAnnaKarenina = open(file)
@@ -28,15 +31,24 @@ def lexicalRichnessFunction(file):
     lexMath = len(set(text)) / len(text)
     print('Lexical Richness: ' + str(lexMath))
 
-eachCharacterList = []
+eachCharacterList = ''
 allCharactersList = []
 openCharacterList = open("/Users/yanisa/GoogleDrive/Personal_Projects/Tolstoy/AnnaKarenina_TextAnalysis/characterlist.txt")
 characterList = openCharacterList.read()
 def characterCountFunction(text):
     cleanText = re.sub('\[.*\]', '', text)
-    print(cleanText)
+    noWhiteSpace = str.strip(cleanText)
+    print(noWhiteSpace)
+    #print(cleanText)
+    #copy everything until you hit the \n, 
+    #make loop to go until \n, put that all in eachCharacterList, split @ comma (outputs as list)
+    #put that list into allCharactersList, start eachCharacterList back at zero, and go back through loop
+        # if character == '\n':
+        #     eachLine = cleanText.find('\n')
+        #     #eachLine.split(',')
+        #     print(eachLine)
+    # ^^ doesn't work yet
 
-annaKareninaText = "/Users/yanisa/GoogleDrive/Personal_Projects/Tolstoy/AnnaKarenina_TextAnalysis/AnnaKarenina.txt"
-# lexicalRichnessFunction(annaKareninaText)
+#lexicalRichnessFunction(annaKareninaText)
 
 characterCountFunction(characterList)
