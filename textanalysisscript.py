@@ -31,23 +31,25 @@ def lexicalRichnessFunction(file):
     lexMath = len(set(text)) / len(text)
     print('Lexical Richness: ' + str(lexMath))
 
-eachCharacterList = ''
 allCharactersList = []
 openCharacterList = open("/Users/yanisa/GoogleDrive/Personal_Projects/Tolstoy/AnnaKarenina_TextAnalysis/characterlist.txt")
 characterList = openCharacterList.read()
 def characterCountFunction(text):
+    # eachCharacterNames/empty string has to be inside the function because I am adding to it (not just reading)
+    eachCharacterNames = ''
+    # Remove brackets and text in between the brackets and empty left and right whitespace
     cleanText = re.sub('\[.*\]', '', text)
     noWhiteSpace = str.strip(cleanText)
-    print(noWhiteSpace)
-    #print(cleanText)
-    #copy everything until you hit the \n, 
-    #make loop to go until \n, put that all in eachCharacterList, split @ comma (outputs as list)
-    #put that list into allCharactersList, start eachCharacterList back at zero, and go back through loop
-        # if character == '\n':
-        #     eachLine = cleanText.find('\n')
-        #     #eachLine.split(',')
-        #     print(eachLine)
-    # ^^ doesn't work yet
+    for characters in noWhiteSpace: 
+        # copy everything until '\n'
+        if characters != '\n':
+            eachCharacterNames = eachCharacterNames + characters
+        # once you hit '\n', split @ commas (to separate names & output as list), add those to the list of lists, and empty the small list
+        if characters == '\n':
+            firstCharacterList = eachCharacterNames.split(',')
+            eachCharacterNames = ''
+            allCharactersList.append(firstCharacterList)
+    #print(allCharactersList)
 
 #lexicalRichnessFunction(annaKareninaText)
 
