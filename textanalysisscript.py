@@ -63,14 +63,9 @@ def characterCountFunction(characters):
     annaKareninaOpen = open(annaKareninaText)
     annaKarenina = annaKareninaOpen.read()
     annaKarenina = annaKarenina.replace('\n', ' ')
-    # for eachElement in characters:
-    #     for each in eachElement:
-    #         t = each.rstrip()
-    #         characters = 
+    # TO BE CONTINUED [SOMEHOW...]
         
-
-
-    #use .rstrip() and .islower when comparing to text
+    #use .islower when comparing to text
 
 #lexicalRichnessFunction(annaKareninaText)
 
