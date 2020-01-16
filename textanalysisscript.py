@@ -34,9 +34,10 @@ def lexicalRichnessFunction(file):
 allCharactersList = []
 openCharacterList = open("/Users/yanisa/GoogleDrive/Personal_Projects/Tolstoy/AnnaKarenina_TextAnalysis/characterlist.txt")
 characterList = openCharacterList.read()
-def characterCountFunction(text):
+def characterMakeListOfListsFunction(text):
     # eachCharacterNames/empty string has to be inside the function because I am adding to it (not just reading)
     eachCharacterNames = ''
+    eachCharacterNamesAgain = []
     # Remove brackets and text in between the brackets and empty left and right whitespace
     cleanText = re.sub('\[.*\]', '', text)
     noWhiteSpace = str.strip(cleanText)
@@ -47,10 +48,32 @@ def characterCountFunction(text):
         # once you hit '\n', split @ commas (to separate names & output as list), add those to the list of lists, and empty the small list
         if characters == '\n':
             firstCharacterList = eachCharacterNames.split(',')
+            # empty the list to start the next tolstoy character
             eachCharacterNames = ''
-            allCharactersList.append(firstCharacterList)
-    #print(allCharactersList)
+            for eachCharacter in firstCharacterList:
+                # strip white space from each name, then add them to the list (must assign to list so I don't keep overwriting them)
+                eachCharacterNamesAgain.append(eachCharacter.rstrip())
+            # add each character list to create list of lists
+            allCharactersList.append(eachCharacterNamesAgain)
+            # empty the character list to go back up and start the next character (so it doesn't keep adding them)
+            eachCharacterNamesAgain = []
+    print(allCharactersList)
+
+def characterCountFunction(characters):
+    annaKareninaOpen = open(annaKareninaText)
+    annaKarenina = annaKareninaOpen.read()
+    annaKarenina = annaKarenina.replace('\n', ' ')
+    # for eachElement in characters:
+    #     for each in eachElement:
+    #         t = each.rstrip()
+    #         characters = 
+        
+
+
+    #use .rstrip() and .islower when comparing to text
 
 #lexicalRichnessFunction(annaKareninaText)
 
-characterCountFunction(characterList)
+characterMakeListOfListsFunction(characterList)
+
+characterCountFunction(allCharactersList)
