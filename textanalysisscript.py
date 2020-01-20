@@ -75,10 +75,10 @@ def characterCountFunction(characters):
             if allLowerCase in annaKarenina:
                 # have to make numOfInstances variable to count each instance (time a name appears), not just whether or not it shows up in the text
                 numOfInstances = annaKarenina.count(allLowerCase)
+                # remove the element from the AK text so it doesn't double-count each time it goes around (changing it to puff because it's cute<3)
+                annaKarenina = annaKarenina.replace(allLowerCase, "puff!")
                 # if the character name is found, add it to the dictionary within its key
                 characterCountDict[keyInDict] = characterCountDict[keyInDict] + numOfInstances
-
-                # TODO remove them from the text as it goes to avoid double-counting
     print(characterCountDict)
 
 
