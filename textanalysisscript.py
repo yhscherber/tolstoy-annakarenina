@@ -57,15 +57,30 @@ def characterMakeListOfListsFunction(text):
             allCharactersList.append(eachCharacterNamesAgain)
             # empty the character list to go back up and start the next character (so it doesn't keep adding them)
             eachCharacterNamesAgain = []
-    print(allCharactersList)
+    #print(allCharactersList)
 
 def characterCountFunction(characters):
     annaKareninaOpen = open(annaKareninaText)
-    annaKarenina = annaKareninaOpen.read()
-    annaKarenina = annaKarenina.replace('\n', ' ')
-    # TO BE CONTINUED [SOMEHOW...]
-        
-    #use .islower when comparing to text
+    annaKarenina = annaKareninaOpen.read().lower().replace('\n', ' ')
+    characterCountDict = {}
+    for eachList in characters:
+        # assigning variable to use as key in dict later
+        keyInDict = eachList[0]
+        # assign key to 0 for each new character (list in list of lists)
+        characterCountDict[keyInDict] = 0
+        # this part is for each list in the list of lists (e.g. only looking at Stiva's names, etc...)
+        for element in eachList:
+            # make everything lowercase to match the cleaned AK text
+            allLowerCase = element.lower()
+            if allLowerCase in annaKarenina:
+                # have to make numOfInstances variable to count each instance (time a name appears), not just whether or not it shows up in the text
+                numOfInstances = annaKarenina.count(allLowerCase)
+                # if the character name is found, add it to the dictionary within its key
+                characterCountDict[keyInDict] = characterCountDict[keyInDict] + numOfInstances
+
+                # TODO remove them from the text as it goes to avoid double-counting
+    print(characterCountDict)
+
 
 #lexicalRichnessFunction(annaKareninaText)
 
