@@ -3,22 +3,22 @@
 
 [ignore text in brackets]
 
-Stepan Arkadyevitch Oblonsky,Stiva,Stepan Arkadyevitch,Oblonsky,Stepan
-Darya Alexandrovna Oblonskaya,Dolly,Darya Alexandrovna
-Anna Arkadyevna Karenina,Anna,Anna Arkadyevna,Anna Karenina
-Alexey Alexandrovitch Karenin,Karenin,Alexey Alexandrovitch
+Oblonsky,Stepan Arkadyevitch Oblonsky,Stiva,Stepan Arkadyevitch,Stepan
+Dolly,Darya Alexandrovna Oblonskaya,Darya Alexandrovna
+Anna Karenina,Anna Arkadyevna Karenina,Anna,Anna Arkadyevna
+Karenin,Alexey Alexandrovitch Karenin,Alexey Alexandrovitch
 Seryozha,Sergey Alexeitch     [Anna's son]
 Annie   [Anna and Vronsky's daughter]
 Nikolay Dmitrievitch Levin,Nikolay Dmitrievitch   [main Levin's brother]
-Konstantin Dmitrievitch Levin,Kostya,Konstantin Dmitrievitch,Levin
+Levin,Konstantin Dmitrievitch Levin,Kostya,Konstantin Dmitrievitch
 Sergey Ivanovitch Koznishev,Sergey Ivanovitch    [Levin's half brother]
 Prince Shtcherbatsky,Alexander Shtcherbatsky
 Princess Shtcherbatskaya
-Ekaterina,Princess Kitty Shtcherbatskaya,Kitty,Katya,Kitty Shtcherbatskaya
+Kitty,Princess Kitty Shtcherbatskaya,Ekaterina,Katya,Kitty Shtcherbatskaya
 Nikolay Shtcherbatsky,young Shtcherbatsky   [the young Shtcherbatsky - Kitty's brother]
 Princess Natalia Alexandrovna,Natalia Alexandrovna Lvova,Madame Lvova,Natalia Alexandrovna [Kitty's older sister]
 Arseny Lvov,Lvov    [Natalia's husband]
-Alexey Kirillovitch,Vronsky
+Vronsky,Alexey Kirillovitch
 Countess Nordston,Nordston      [Kitty's friend]
 Countess Vronskaya,Vronskaya       [Vronsky's mom]
 Captain Yashvin,Prince Yashvin,Yashvin      [Vronsky's friend]

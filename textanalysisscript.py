@@ -79,7 +79,10 @@ def characterCountFunction(characters):
                 annaKarenina = annaKarenina.replace(allLowerCase, "puff!")
                 # if the character name is found, add it to the dictionary within its key
                 characterCountDict[keyInDict] = characterCountDict[keyInDict] + numOfInstances
-    print(characterCountDict)
+    #print(characterCountDict)
+    # v = values, reverse = True so it prints in descending (not ascending) order
+    sortedCharacterCountDict = sorted(characterCountDict.items(), key=lambda v: v[1], reverse = True)
+    print(sortedCharacterCountDict)
 
 
 #lexicalRichnessFunction(annaKareninaText)
